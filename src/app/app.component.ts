@@ -3,11 +3,20 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CatnavigationComponent } from './catnavigation/catnavigation.component';
+import { HomeModule } from './home/home.module';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, FontAwesomeModule],
+  imports: [
+    CommonModule,
+    RouterOutlet,
+    HeaderComponent,
+    FontAwesomeModule,
+    CatnavigationComponent,
+    HomeModule,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
